@@ -303,7 +303,7 @@ class Kint
 		}
 
 		if ( !self::$fileLinkFormat ) {
-			return "{$shortenedName} line <i>{$line}</i>";
+			return "{$shortenedName}:<i>{$line}</i>";
 		}
 
 		$url   = str_replace( array( '%f', '%l' ), array( $file, $line ), self::$fileLinkFormat );
